@@ -50,9 +50,9 @@ public class test {
 		}
 		System.out.println("La somma di tutti gli elementi della diagonale destra :"+somma);
 		somma=0;
-		for(int i=n-1;i>0;i--) {
-			for(int j=n-1;j>0;j--) {
-				if(i==j) {
+		for(int i=n-1;i>=0;i--) {
+			for(int j=n-1;j>=0;j--) {
+				if(i+j==n-1) { //i=5 && j=1, i=4 && j=2, i==3 && j=3, ...
 				somma=somma+array[i][j];
 					
 				}
